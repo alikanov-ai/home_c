@@ -6,7 +6,7 @@ int main(void)
 	scanf("%d", &num);
 	while (num > 0)
 	{
-		if (num % 10 < (int)(num / 10) % 10)
+		if (num % 10 <= (int)(num / 10) % 10)
 		{
 			printf("NO\n");
 			return 0;
