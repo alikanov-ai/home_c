@@ -2,17 +2,14 @@
 
 int main(void)
 {
-	unsigned int num, min = 0, max = 0, a = 0, b = 0;
+	unsigned int num, min = 0, max = 0;
 	scanf("%d", &num);
-	while (num / 10 > 0)
+	min = num%10;
+	max = num%10;
+	while (num > 0)
 	{
-		a = num % 10;
-		b = (num / 10) % 10;
-		max = a > b && a > max ? a : (b > max ? b : max);
-		if (min == 0)
-			min = a == max ? b : a;
-		else
-			min = a < b && a < min ? a : (b < min ? b : min);
+		min = num%10 < min ? num%10 : min;
+		max = num%10 > max ? num%10 : max; 
 		num /= 10;
 	}
 	printf("%d %d\n", min, max);
