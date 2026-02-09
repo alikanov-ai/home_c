@@ -2,8 +2,7 @@
 
 int main(void)
 {
-	unsigned int num, curent_num, curent_sum, current_multiply;
-	bool first = 1;
+	unsigned int num, curent_num, curent_sum, current_multiply, first = 1;
 	scanf("%d", &num);
 	for (int i = 10; i <= num; i++)
 	{
