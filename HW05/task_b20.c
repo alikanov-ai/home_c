@@ -5,7 +5,10 @@ int main(void)
 	unsigned int num;
 	scanf("%d", &num);
 	if (num < 2)
+	{
 		printf("NO\n");
+		return 0;
+	}
 	else
 	{
 		for (int i = 2; i < num; i++)
