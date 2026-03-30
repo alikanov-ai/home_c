@@ -77,14 +77,7 @@ int main(void)
 			{
 				int current_num = 0;
 				for (int iter = start_pos; iter < i; iter++)
-				{
-					printf("current_num: %d\n", current_num);
-					printf("+ %d\n", str[iter] - 48);
-					printf("i: %d\n", i);
-					printf("iter: %d\n", iter);
-					printf("InDegree: %d\n", InDegree(10, i - 1 - iter));
 					current_num = current_num + (str[iter] - 48) * InDegree(10, i - 1 - iter);
-				}
 				arr[last_pos_arr] = current_num;
 				last_pos_arr++;
 				start_pos = i + 1;
